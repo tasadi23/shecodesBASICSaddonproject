@@ -79,6 +79,10 @@
   </style>
 </head>
 <body>
+
+  <!-- 🌗 Theme Toggle Button -->
+  <button id="theme-toggle">Toggle Theme</button>
+
   <h1>Costume Making</h1>
   <h2>Where Creativity Becomes Reality</h2>
 
@@ -114,7 +118,8 @@
         document.body.classList.toggle("dark-theme");
       };
 
-      document.body.addEventListener("dblclick", toggleTheme);
+      const button = document.getElementById("theme-toggle");
+      button.addEventListener("click", toggleTheme);
     });
   </script>
 </body>
